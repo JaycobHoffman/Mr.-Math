@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  background-color: lightgreen;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#animation1 {
+  position: relative;
+  animation-name: bothover;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+  @keyframes bothover {
+    0% {top: 0;}
+    50% {top: 10px;}
+    100% {top: 0;}
+  }
+
+#eyesflex {
+  display: flex;
+  justify-content: center;
+}
+
+#eyes {
+  position: relative;
+  top: 40px;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#eyes > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 30%;
+  box-shadow: 5px 5px 7px black;
+}
+
+#leftpupil {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 30%;
+}
+
+#rightpupil {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 30%;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 150px;
+  margin: 30px;
+  background-color: black;
+  border: 20px ridge lightblue;
+  box-shadow: 5px 5px 7px black;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#rectangle {
+  position: relative;
+  background-color: blue;
+  width: 0;
+  height: 70px;
+  border: 10px ridge lightblue;
+  bottom: 50px;
+  box-shadow: 5px 5px 7px black;
+}
+
+#circle {
+  position: relative;
+  width: 0;
+  height: 70px;
+  border: 20px ridge lightblue;
+  box-shadow: 5px 5px 7px black;
+  border-radius: 10px;
+  bottom: 70px;
+}
+
+#calc {
+  position: relative;
+  bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  background-image: linear-gradient(to bottom right, white, lightgrey);
+  padding: 30px;
+  border: 20px ridge lightblue;
+  border-radius: 30px;
+  box-shadow: 5px 5px 7px black;
+}
+
+button {
+  border: 5px outset lightgrey;
+  border-radius: 30px;
+  box-shadow: 5px 5px 7px grey;
+  margin: 10px;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+  button:active {
+    border: 5px inset lightgrey;
+    transition-duration: 0.3s;
+  }
